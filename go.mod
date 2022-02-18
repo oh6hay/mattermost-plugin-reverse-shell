@@ -1,4 +1,4 @@
-module github.com/mattermost/mattermost-plugin-starter-template
+module github.com/oh6hay/mattermost-plugin-reverse-shell
 
 go 1.16
 
