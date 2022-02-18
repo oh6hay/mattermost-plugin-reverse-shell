@@ -137,6 +137,11 @@ dist:	server webapp bundle
 deploy: dist
 	./build/bin/pluginctl deploy $(PLUGIN_ID) dist/$(BUNDLE_NAME)
 
+localdeploy: dist
+	cp -v dist/mattermost-plugin-*.tar.gz ../mattermost-server/data/plugins/zoom.tar.gz
+	echo restart the server
+
+
 ## Builds and installs the plugin to a server, updating the webapp automatically when changed.
 .PHONY: watch
 watch: server bundle
