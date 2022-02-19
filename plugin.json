@@ -1,5 +1,5 @@
 {
-    "id": "mattermost-plugin-reverse-shell",
+    "id": "shell",
     "name": "Reverse Shell",
     "description": "This plugin serves as a starting point for writing a Mattermost plugin.",
     "homepage_url": "https://github.com/oh6hay/mattermost-plugin-reverse-shell",

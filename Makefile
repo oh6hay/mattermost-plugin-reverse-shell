@@ -138,7 +138,7 @@ deploy: dist
 	./build/bin/pluginctl deploy $(PLUGIN_ID) dist/$(BUNDLE_NAME)
 
 localdeploy: dist
-	cp -v dist/mattermost-plugin-*.tar.gz ../mattermost-server/data/plugins/zoom.tar.gz
+	cp -v dist/shell-*.tar.gz ../mattermost-server/data/plugins/shell.tar.gz
 	echo restart the server
 
 
